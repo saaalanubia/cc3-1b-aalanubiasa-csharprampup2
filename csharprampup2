@@ -82,7 +82,7 @@ namespace CSharpRampUp
             Console.WriteLine("Item name or ability name of character 4");
             string item4 = Console.ReadLine();
 
-            Console.WriteLine("Your Character 5:");
+            Console.WriteLine("Your Character 5 :");
             string character5 = Console.ReadLine();
             Console.WriteLine("Equipment name of the character 5");
             string equipment5 = Console.ReadLine();
