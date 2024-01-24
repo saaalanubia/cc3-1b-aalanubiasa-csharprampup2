@@ -6,28 +6,25 @@ namespace CSharpRampUp
         {
             //Part 1
             //Pounds to Kilograms
-            Console.WriteLine("Pounds(lbs) to Kilograms(kgs):");
-            Console.WriteLine("Enter the number: ");
+            Console.Write("Weight in Pounds(lbs): ");
             double pounds = Convert.ToDouble(Console.ReadLine());
             double kilograms = pounds * 0.453592;
-            Console.WriteLine("Weight in Pounds (lbs): " + pounds);
             Console.WriteLine("Weight converted to Kilograms (kg): " + kilograms);
 
+            Console.WriteLine();
+
             //Miles to Kilometers
-            Console.WriteLine("Miles(mi) to Kilometers(Km):");
-            Console.WriteLine("Enter the number: ");
+            Console.Write("Length in Miles(mi): ");
             double miles = Convert.ToDouble(Console.ReadLine());
             double kilometers = miles * 1.60934;
-            Console.WriteLine("Lenght in Miles (mi): " + miles);
-            Console.WriteLine("Lenght converted to Kilometers (km): " + kilometers);
+            Console.WriteLine("Length converted to Kilometers (km): " + kilometers);
 
             //Fahrenheit to Celcius
-            Console.WriteLine("Fahrenheit(°F) to Celcius(°C):");
-            Console.WriteLine("Enter the number: ");
+            Console.WriteLine("Temperature in Fahrenheit(°F): ");
             double fahrenheit = Convert.ToDouble(Console.ReadLine());
-            double celcius = 5.0 / 9.0 * (fahrenheit - 32);
-            Console.WriteLine("Temperature in Fahrenheit (°F): " + fahrenheit);
-            Console.WriteLine("Temperature converted to Celcius (°C): " + celcius);
+            double celcius1 =fahrenheit - 32;
+            double celcius2 =(celcius1 * 5) / 9;
+            Console.WriteLine("Temperature in Celcius (°C): " + celcius2);
 
             //Average age of the students
             Console.WriteLine("Enter the Age of student 1: ");
@@ -53,17 +50,6 @@ namespace CSharpRampUp
 
             double average = (student1 + student2 + student3 + student4 + student5 + student6 + student7 + student8 + student9 + student10) / (10);
 
-            Console.WriteLine("Age of student 1:" + student1);
-            Console.WriteLine("Age of student 2:" + student2);
-            Console.WriteLine("Age of student 3:" + student3);
-            Console.WriteLine("Age of student 4:" + student4);
-            Console.WriteLine("Age of student 5:" + student5);
-            Console.WriteLine("Age of student 6:" + student6);
-            Console.WriteLine("Age of student 7:" + student7);
-            Console.WriteLine("Age of student 8:" + student8);
-            Console.WriteLine("Age of student 9:" + student9);
-            Console.WriteLine("Age of student 10:" + student10);
-            Console.WriteLine("The average age of the students is:" + average);
 
             //Fantasy story
             Console.WriteLine("Fantasy Story");
@@ -163,9 +149,9 @@ namespace CSharpRampUp
 
             else
             {
-                for (int i = 1; i <= num; i++)
+                for (int i = num; i >= 1; i--)
                 {
-                    for (int j = 1; j <= num - i + 1; j++)
+                    for (int j = 1; j <= i; j++)
                     {
                         Console.Write(j + " ");
                     }
